@@ -1,10 +1,13 @@
 ## Tchat Video NC
 
 ### Softwares required
-- NODEDEMON
 - NodeJS
+
+
+### dependancies required
 - Express
 - Ejs
+- NODEDEMON
 
 ### Install the project dependencies
 ```
