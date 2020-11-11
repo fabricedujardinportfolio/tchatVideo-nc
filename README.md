@@ -4,7 +4,7 @@
 - NodeJS
 
 
-### dependancies required
+### Dependancies required
 - Express
 - Ejs
 - NODEDEMON
