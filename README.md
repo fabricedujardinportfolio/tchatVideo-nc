@@ -8,6 +8,8 @@
 - Express
 - Ejs
 - NODEDEMON
+- Socket
+- PEER
 
 ### Install the project dependencies
 ```

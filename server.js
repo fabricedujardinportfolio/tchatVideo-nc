@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
-const server = require('http').Server(app)
-const io = require('socket.io')(server)
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
-app.set("view engine", "ejs")
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get('/', (req, res) => {
@@ -14,9 +14,9 @@ app.get('/:room', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    // console.log('User IO Connect');
+    console.log('User IO Connect');
     socket.on("join-room", (roomId, userId) => {
-        socket.join('roomId');
+        socket.join(roomId);
         socket.to(roomId).broadcast.emit("user-connected", userId);
     });
 });
